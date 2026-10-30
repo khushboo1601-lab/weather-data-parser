@@ -46,7 +46,7 @@ def generate_weather_recommendations(client,weather_data):
     prompt = load_system_prompt()
 
     #Step 2: Add dynamic weather info
-    f"""
+    prompt = f"""
     {prompt}
 
     Current weather information:
